@@ -1,37 +1,21 @@
 # final
-                <<abstract>>
-                 Person
-        -------------------------
-        - fullName : string
-        -------------------------
-        + FullName : string
-        + GetInfo() : string
-                ▲
-                │
-                │ Inheritance
-                │
-             Student
-        -------------------------
-        - studentId : string
-        - score : double
-        -------------------------
-        + StudentId : string
-        + Score : double
-        + CalculateGrade() : string
-        + GetInfo() : string
-        
+     Person (abstract)
+- fullName : string
++ GetInfo()
 
-             Course
-        -------------------------
-        - courseCode : string
-        - courseName : string
-        - students : List<Student>
-        -------------------------
-        + AddStudent(student)
-        + ShowStudents()
-        + ShowStatistics()
-        
+Student : Person
+- studentId : string
+- score : double
++ CalculateGrade()
++ GetInfo()
 
-             Program
-        -------------------------
-        + Main()
+Course
+- courseCode : string
+- courseName : string
+- students : List<Student>
++ AddStudent()
++ ShowStudents()
++ ShowStatistics()
+
+Program
++ Main()
