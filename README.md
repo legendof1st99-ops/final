@@ -1,4 +1,6 @@
 # final
+
+#นายปัณณธร ศรีทา 683450056-9
 # Grade Calculation System
 
 ## Description
