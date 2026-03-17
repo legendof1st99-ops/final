@@ -1,23 +1,50 @@
 # final
+# Grade Calculation System
+
+## Description
+This project is a C# Object-Oriented Programming (OOP) system used to manage course grades.  
+The system allows adding students, calculating grades, and displaying statistics.
+
+## OOP Concepts Used
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+
 ## Class Diagram
 
-**Person (abstract)**
-- fullName : string
-- GetInfo()
+```mermaid
+classDiagram
 
-**Student : Person**
-- studentId : string
-- score : double
-- CalculateGrade()
-- GetInfo()
+class Person {
+    <<abstract>>
+    -string fullName
+    +FullName
+    +GetInfo()
+}
 
-**Course**
-- courseCode : string
-- courseName : string
-- students : List<Student>
-- AddStudent()
-- ShowStudents()
-- ShowStatistics()
+class Student {
+    -string studentId
+    -double score
+    +StudentId
+    +Score
+    +CalculateGrade()
+    +GetInfo()
+}
 
-**Program**
-- Main()
+class Course {
+    -string courseCode
+    -string courseName
+    -List<Student> students
+    +AddStudent()
+    +ShowStudents()
+    +ShowStatistics()
+}
+
+class Program {
+    +Main()
+}
+
+Person <|-- Student
+Course "1" --> "*" Student : contains
+Program --> Course : uses
