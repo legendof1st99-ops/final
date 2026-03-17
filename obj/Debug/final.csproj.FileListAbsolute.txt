@@ -1,0 +1,7 @@
+C:\Users\OVER\source\repos\final\final\obj\Debug\final.csproj.AssemblyReference.cache
+C:\Users\OVER\source\repos\final\final\obj\Debug\final.csproj.CoreCompileInputs.cache
+C:\Users\OVER\source\repos\final\final\bin\Debug\final.exe.config
+C:\Users\OVER\source\repos\final\final\bin\Debug\final.exe
+C:\Users\OVER\source\repos\final\final\bin\Debug\final.pdb
+C:\Users\OVER\source\repos\final\final\obj\Debug\final.exe
+C:\Users\OVER\source\repos\final\final\obj\Debug\final.pdb
