@@ -1,21 +1,23 @@
 # final
-     Person (abstract)
-- fullName : string
-+ GetInfo()
+## Class Diagram
 
-Student : Person
+**Person (abstract)**
+- fullName : string
+- GetInfo()
+
+**Student : Person**
 - studentId : string
 - score : double
-+ CalculateGrade()
-+ GetInfo()
+- CalculateGrade()
+- GetInfo()
 
-Course
+**Course**
 - courseCode : string
 - courseName : string
 - students : List<Student>
-+ AddStudent()
-+ ShowStudents()
-+ ShowStatistics()
+- AddStudent()
+- ShowStudents()
+- ShowStatistics()
 
-Program
-+ Main()
+**Program**
+- Main()
